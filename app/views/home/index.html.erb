@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+  <head>
+    <!-- ==============================================
+		Title and Meta Tags
+		=============================================== -->
+    <meta charset="utf-8">
+    <title>Qubico | One-Page Creative Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- ==============================================
+		Favicons
+		=============================================== -->
+    <link rel="shortcut icon" href="/assets/resources/favicon.ico">
+    <link rel="apple-touch-icon" href="/assets/resources/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/resources/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/resources/apple-touch-icon-114x114.png">
+    <!-- ==============================================
+		CSS
+		=============================================== -->
+    <%= stylesheet_link_tag "bootstrap.min" %>
+    <%= stylesheet_link_tag "font-awesome" %>
+    <%= stylesheet_link_tag "flexslider" %>
+    <%= stylesheet_link_tag "sequencejs-qubico" %>
+    <%= stylesheet_link_tag "colorbox" %>
+    <%= stylesheet_link_tag "qubico" %>
+    <%= stylesheet_link_tag "blackbook-blue" %>
+    <!-- ==============================================
+		Fonts
+		=============================================== -->
+    <link href='http://fonts.googleapis.com/css?family=Dosis:600,700,800' rel='stylesheet' type='text/css'>
+    <link href="http://www.google.com/fonts#UsePlace:use/Collection:Open+Sans:400,300,700", rel="stylesheet", type="text/css">
+    <!-- ==============================================
+		JS
+		=============================================== -->
+    <!--[if lt IE 9]>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/assets/libs/modernizr.min.js"></script>
+  </head>
+  <body data-spy="scroll" data-target="#main-nav" data-offset="400">
+    <%= render :partial => 'home/navigation' %>
+    <%= render :partial => 'home/header' %>
+    <%= render :partial => 'actions/purchase_now' %>
+    <%= render :partial => 'home/features' %>
+    <!-- ==============================================
+		CALL TO ACTION (IPHONES)
+		=============================================== -->
+    <section class="color-bg light-typo padding-top-bottom cta-iphones">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="iphones-wrapper scrollimation">
+              <div class="iphone-portrait-frame">
+                <img class="img-responsive" src="/assets/resources/iphone-portrait.png" alt=""/>
+                <div class="iphone-portrait-screen">
+                  <img class="img-responsive" src="/assets/resources/placeholder-160x275.jpg" alt=""/>
+                </div>
+              </div>
+              <div class="iphone-landscape-frame">
+                <img class="img-responsive" src="/assets/resources/iphone-landscape.png" alt=""/>
+                <div class="iphone-landscape-screen">
+                  <img class="img-responsive" src="/assets/resources/placeholder-275x160.jpg" alt=""/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-5 col-sm-offset-1">
+            <h2>Are You Ready To Enjoy?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in varius erat.</p>
+            <p>Nam id felis eu felis consequat adipiscing. Suspendisse sit amet faucibus nunc, dignissim vehicula enim. Vestibulum luctus turpis sit amet varius venenatis.</p>
+            <a class="btn btn-qubico white scrollto" href="#services"><i class="fa fa-arrow-down"></i>See the magic</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <%= render :partial => 'home/benefits' %>
+    <!-- ==============================================
+		FEATURED PROJECTS
+		=============================================== -->
+    <section class="gray-bg padding-top">
+      <div class="container">
+        <h1 class="section-title">Featured Projects</h1>
+        <p class="section-description">Take a taste of our latest projects. We are proud of bringing this magic to life!</p>
+        <p class="text-center"><a class="btn btn-qubico scrollto" href="#portfolio">Our Portfolio</a></p>
+        <div class="ipad-frame scrollimation fade-up">
+          <img class="img-responsive img-center" src="/assets/resources/ipad-landscape.png" alt=""/>
+          <div class="ipad-screen ipad-slider flexslider">
+            <ul class="slides">
+              <li>
+                <img class="img-responsive" src="/assets/resources/placeholder-650x480.jpg" alt=""/>
+              </li>
+              <li>
+                <img class="img-responsive" src="/assets/resources/placeholder-650x480.jpg" alt=""/>
+              </li>
+              <li>
+                <img class="img-responsive" src="/assets/resources/placeholder-650x480.jpg" alt=""/>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <%#= render :partial => 'home/team' %>
+    <!-- ==============================================
+		CALL TO ACTION
+		=============================================== -->
+    <section class="color-bg light-typo cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9 cta-message">
+            <p><strong>Comes out with 12 predefined color schemes.</strong>
+              Or choose your own colors without making any harm to your website with a colors only CSS file.</p>
+          </div>
+          <div class="col-md-3 cta-button">
+            <p class="text-center"><a class="btn btn-qubico white" href="#link"><i class="fa fa-shopping-cart"></i>Purchase Now</a></p>
+          </div>
+        </div><!--End row-->
+      </div><!--End container -->
+    </section><!--End Call to Action -->
+    <%= render :partial => 'home/tour' %>
+    <!-- ==============================================
+		RESPONSIVE VIDEO
+		=============================================== -->
+    <section class="color-bg light-typo padding-top-bottom">
+      <div class="container">
+        <h1 class="section-title">Responsive Video</h1>
+        <p class="section-description">If a Picture is Worth a Thousand Words, a Video is Worth a Million.</p>
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1">
+            <div class="macbook-frame">
+              <img class="img-responsive img-center" src="/assets/resources/macbook.png" alt=""/>
+              <div class="macbook-screen">
+                <iframe width="640" height="360" src="http://www.youtube.com/embed/JuyB7NO0EYY?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div><!-- End row -->
+      </div><!-- End container -->
+    </section>
+    <%= render :partial => 'home/pricing' %>
+    <!-- ==============================================
+		CALL TO ACTION
+		=============================================== -->
+    <section class="color-bg light-typo cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9 cta-message">
+            <p><strong>Comes out with 12 predefined color schemes.</strong>
+              Or choose your own colors without making any harm to your website with a colors only CSS file.</p>
+          </div>
+          <div class="col-md-3 cta-button">
+            <p class="text-center"><a class="btn btn-qubico white" href="#link"><i class="fa fa-shopping-cart"></i>Purchase Now</a></p>
+          </div>
+        </div><!--End row-->
+      </div><!--End container -->
+    </section><!--End Call to Action -->
+    <%= render :partial => 'home/clients' %>
+    <%= render :partial => 'home/contactus' %>
+    <%= render :partial => 'home/footer' %>
+    <!-- ==============================================
+		SCRIPTS
+		=============================================== -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <%= javascript_include_tag "libs/bootstrap.min" %>
+    <%= javascript_include_tag "jquery.easing.1.3.min" %>
+    <%= javascript_include_tag "jquery.scrollto" %>
+    <%= javascript_include_tag "jquery.flexslider.min" %>
+    <%= javascript_include_tag "jquery.fitvids" %>
+    <%= javascript_include_tag "jquery.fittext" %>
+    <%= javascript_include_tag "waypoints.min" %>
+    <%= javascript_include_tag "jquery.countTo" %>
+    <%= javascript_include_tag "jquery.easypiechart" %>
+    <%= javascript_include_tag "jquery.sequence-min" %>
+    <%= javascript_include_tag "jquery.colorbox-min" %>
+    <%= javascript_include_tag "contact" %>
+    <%= javascript_include_tag "qubico" %>
+  </body>
+</html>
